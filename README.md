@@ -51,4 +51,4 @@ The Work Day Scheduler is a simple calendar application that allows users to sch
 ## Links
 Github Repository Link: https://github.com/markhom/work-day-scheduler 
 
-Deployed Link on Github:
+Deployed Link on Github: https://markhom.github.io/work-day-scheduler/
