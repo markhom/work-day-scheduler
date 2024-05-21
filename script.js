@@ -23,10 +23,15 @@ $('.saveBtn').on('click', function() {
             $(this).addClass('future').removeClass('past present');
         }
     });
-    // TODO: Add code to get any user input that was saved in localStorage and set
-    // the values of the corresponding textarea elements. HINT: How can the id
-    // attribute of each time-block be used to do this?
-    //
+    // Code to get any user input that was saved in localStorage and set
+    // the values of the corresponding textarea elements. 
+    $('.time-block').each(function(){
+        timeBlockId = $(this).attr('id');
+        let savedInput = localStorage.getItem(timeBlockId);
+        if(savedInput) {
+            $(this).find('.description').val(savedInput);
+        }
+    });
     // TODO: Add code to display the current date in the header of the page.
   });
   
