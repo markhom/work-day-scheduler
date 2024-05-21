@@ -26,7 +26,7 @@ $('.saveBtn').on('click', function() {
     // Code to get any user input that was saved in localStorage and set
     // the values of the corresponding textarea elements. 
     $('.time-block').each(function(){
-        timeBlockId = $(this).attr('id');
+        let timeBlockId = $(this).attr('id');
         let savedInput = localStorage.getItem(timeBlockId);
         if(savedInput) {
             $(this).find('.description').val(savedInput);
